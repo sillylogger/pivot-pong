@@ -21,17 +21,17 @@ describe ApplicationHelper do
 
   describe "#location" do
     subject { helper.location }
+    let(:location_env_var) { 'PIVOT_PONG_LOCATION' }
 
     context "when no location is configured" do
+      before { ENV[location_env_var] = nil }
       it { should == "NYC" }
     end
 
     context "when a location is configured" do
-      before do
-        ENV["PIVOT_PONG_LOCATION"] = "Starbase Alpha"
-      end
-
-      it { should == "Starbase Alpha" }
+      let(:location) { "Starbase Alpha" }
+      before { ENV[location_env_var] = location }
+      it { should == location }
     end
   end
 end
