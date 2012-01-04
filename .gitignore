@@ -1,6 +1,7 @@
 .DS_Store
 .bundle
 .rspec
+.idea
 tmp/
 log/
 *.sqlite3
