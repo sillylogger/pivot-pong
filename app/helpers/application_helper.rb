@@ -5,6 +5,6 @@ module ApplicationHelper
   end
 
   def location
-    ENV["PIVOT_PONG_LOCATION"] || "NYC"
+    ENV['PONG_LOCATION'] || "NYC"
   end
 end
