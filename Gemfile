@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rake'
-gem 'rails', '3.0.19'
+gem 'rails', '3.0.20'
 gem 'haml-rails'
 gem 'heroku'
 gem 'jquery-rails'
